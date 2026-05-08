@@ -1,0 +1,125 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+}
+
+/* HERO (pantalla completa) */
+.hero {
+    height: 100vh;
+    background: url("Portafolio_Imagenes/inicio.png") center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+/* Oscurecer imagen */
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-texto {
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 60px;
+}
+
+.hero p {
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+/* BOTÓN */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #ff7b00;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+/* NAV FLOTANTE */
+.nav {
+    position: sticky;
+    top: 0;
+    background: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav a:hover {
+    color: #ff7b00;
+}
+
+/* SECCIONES */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    overflow: hidden;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 15px;
+}
+
+/* PROMO */
+.promo {
+    background: linear-gradient(45deg, #ff7b00, #ffb347);
+    color: white;
+}
+
+.promo-box {
+    padding: 30px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
