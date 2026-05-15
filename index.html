@@ -2,73 +2,95 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo Viajes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<section class="hero" id="inicio">
-    <div class="hero-texto">
-        <h1>Mundo Viajes</h1>
-        <p>Descubrí el mundo, viví la aventura</p>
-        <a href="#destinos" class="btn">Explorar destinos</a>
-    </div>
-</section>
+    <header class="header" id="inicio">
+        <nav class="navbar">
+            <div class="logo">
+                ✈ Mundo Viajes
+            </div>
 
-<nav class="nav">
-    <a href="#inicio">Inicio</a>
-    <a href="#destinos">Destinos</a>
-    <a href="#promo">Promociones</a>
-    <a href="#contacto">Contacto</a>
-</nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#promocion">Promociones</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
 
-<main>
+        <div class="hero">
+            <h1>Descubrí el mundo con nosotros</h1>
+            <p>Viajes inolvidables llenos de aventura, paisajes y experiencias únicas.</p>
+            <a href="#destinos" class="btn">Explorar destinos</a>
+        </div>
+    </header>
 
-    <section id="destinos" class="destinos">
-        <h2>Elegí tu próxima aventura</h2>
+    <main>
 
-        <div class="grid">
+        <section class="destinos" id="destinos">
+            <h2>Destinos Populares</h2>
 
-            <article class="card">
-                <img src="Portafolio_Imagenes\playa.jpg">
-                <div class="info">
+            <div class="cards">
+
+                <article class="card">
+                    <img src="Portafolio_Imagenes/playa.jpg" alt="Playa">
                     <h3>Playa</h3>
-                    <p>Relajate frente al mar con paisajes paradisíacos.</p>
-                </div>
-            </article>
+                    <p>
+                        Relajate frente al mar, disfrutá del sol y descubrí playas paradisíacas
+                        con aguas cristalinas.
+                    </p>
+                </article>
 
-            <article class="card">
-                <img src="Portafolio_Imagenes\montanas.jpg">
-                <div class="info">
+                <article class="card">
+                    <img src="Portafolio_Imagenes/montanas.jpg" alt="Montaña">
                     <h3>Montaña</h3>
-                    <p>Aventura y naturaleza en su estado más puro.</p>
-                </div>
-            </article>
+                    <p>
+                        Viví aventuras rodeado de naturaleza, senderos y paisajes increíbles
+                        en destinos de montaña.
+                    </p>
+                </article>
 
-            <article class="card">
-                <img src="Portafolio_Imagenes\ciudad.jpg">
-                <div class="info">
+                <article class="card">
+                    <img src="Portafolio_Imagenes/ciudad.jpg" alt="Ciudad">
                     <h3>Ciudad</h3>
-                    <p>Explorá culturas, gastronomía y vida urbana.</p>
-                </div>
-            </article>
+                    <p>
+                        Explorá grandes ciudades llenas de cultura, gastronomía y experiencias
+                        únicas para descubrir.
+                    </p>
+                </article>
 
+            </div>
+        </section>
+
+        <section class="promocion" id="promocion">
+            <div class="promo-box">
+                <h2>Promoción del Mes</h2>
+                <p>
+                    🌍 ¡Reservá ahora y obtené un <strong>25% de descuento</strong> en paquetes
+                    turísticos para destinos de playa durante este mes!
+                </p>
+
+                <a href="#" class="btn">Reservar ahora</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer id="contacto">
+        <h3>Mundo Viajes</h3>
+
+        <div class="redes">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">TikTok</a>
         </div>
-    </section>
 
-    <section id="promo" class="promo">
-        <div class="promo-box">
-            <h2>🔥 Promoción del Mes</h2>
-            <p>Caribe all inclusive con 30% OFF + excursiones gratis.</p>
-        </div>
-    </section>
-
-</main>
-
-<footer id="contacto">
-    <p>📧 contacto@mundoviajes.com</p>
-    <p>📱 @mundoviajes</p>
-</footer>
+        <p>Email: mundoviajes@gmail.com</p>
+    </footer>
 
 </body>
 </html>
